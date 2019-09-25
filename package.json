@@ -1,0 +1,45 @@
+{
+  "name": "totaljs-x-bunyan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "release.js",
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "moment": "^2.24.0",
+    "total.js": "^3.2.4"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onesjp/totaljs-X-bunyan.git"
+  },
+  "scripts": {
+    "start": "node release.js | bunyan || true",
+    "debug": "node debug.js | bunyan || true",
+    "code": "node debug.js | bunyan -c 'this.mode==\"code\"' || true",
+    "http": "node debug.js | bunyan -c 'this.mode==\"http\"' || true",
+    "test": "standard --fix"
+  },
+  "keywords": [
+    "total",
+    "bunyan"
+  ],
+  "author": "onesjp",
+  "license": "MIT",
+  "standard": {
+    "globals": [
+      "CONFIG",
+      "F",
+      "ROUTE",
+      "$"
+    ]
+  },
+  "ignore": [
+    "./logs",
+    "./public",
+    "./tmp",
+    "./views"
+  ]
+}
