@@ -6,7 +6,7 @@
   "dependencies": {
     "bunyan": "^1.8.12",
     "moment": "^2.24.0",
-    "total.js": "^3.2.4"
+    "total.js": "^3.4.9"
   },
   "devDependencies": {
     "standard": "^14.3.1"
