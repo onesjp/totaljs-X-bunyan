@@ -5,7 +5,7 @@
   "main": "release.js",
   "dependencies": {
     "bunyan": "^1.8.12",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "total.js": "^3.2.4"
   },
   "devDependencies": {
